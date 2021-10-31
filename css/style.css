@@ -15,7 +15,7 @@ body {
 
 .nav {
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
   margin: 1.5rem auto 0;
   background: #0E1127;
   width: 90vw;
@@ -68,10 +68,10 @@ body {
 }
 .texto-principal h1 {
   margin: 0.5rem 0;
-  font-size: 2.5em;
+  font-size: 2.3em;
 }
 .texto-principal h2 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .texto-principal p {
   margin: 1rem 0;
@@ -97,10 +97,27 @@ body {
   grid-template-columns: 4;
 }
 .container-footer .bloco {
-  border: solid #000;
+  display: grid;
+  padding-bottom: 3rem;
+}
+.container-footer .bloco .icon {
+  width: 64px;
+  height: 64px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 1rem auto;
 }
 .container-footer .bloco p {
-  padding: 1.5rem 2rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.first, .third {
+  background: #0E1127;
+}
+
+.second, .fourth {
+  background: #FE6002;
 }
 
 /*# sourceMappingURL=style.css.map */

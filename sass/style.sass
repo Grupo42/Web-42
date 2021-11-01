@@ -1,4 +1,5 @@
 @use 'variables'
+
 *
   padding: 0
   margin: 0
@@ -40,14 +41,20 @@ body
   flex-direction: column
   align-items: flex-end
   width: 100vw
+  height: 89vh
   background: variables.$main-blue
-
+.menina
+  position: absolute
+  top: 0
+  left: 0
   & img
-    position: absolute
-    top: -12rem
-    left: -5rem
+    position: relative
+    width: 40vw
+    box-shadow: 0 0 5px #fff
+    top: -8rem
+    left: -5.5rem
     border-radius: 50%
-    width: 35%
+    width: 80%
 
 .texto-principal
   display: flex
@@ -55,7 +62,7 @@ body
   text-align: right
   flex-direction: column
   align-items: flex-end
-  margin: 1.8rem 5.5rem
+  margin: 1.8rem 5rem
   font-size: 1.2em
   h1
     margin: .5rem 0
@@ -83,14 +90,15 @@ body
   grid-template-columns: 4
 
   & .bloco
-    display: grid
+    display: flex
+    flex-direction: column
     padding-bottom: 3rem
     .icon
-      width: 64px
-      height: 64px
-      background: #fff
-      border-radius: 50%
+      cursor: pointer
+      z-index: 2
       margin: 1rem auto
+      & i
+        font-size: 3rem
     p
       padding: 0 2rem
       text-align: center

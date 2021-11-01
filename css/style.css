@@ -47,14 +47,23 @@ body {
   flex-direction: column;
   align-items: flex-end;
   width: 100vw;
+  height: 89vh;
   background: #2884A0;
 }
-.main-page img {
+
+.menina {
   position: absolute;
-  top: -12rem;
-  left: -5rem;
+  top: 0;
+  left: 0;
+}
+.menina img {
+  position: relative;
+  width: 40vw;
+  box-shadow: 0 0 5px #fff;
+  top: -8rem;
+  left: -5.5rem;
   border-radius: 50%;
-  width: 35%;
+  width: 80%;
 }
 
 .texto-principal {
@@ -63,7 +72,7 @@ body {
   text-align: right;
   flex-direction: column;
   align-items: flex-end;
-  margin: 1.8rem 5.5rem;
+  margin: 1.8rem 5rem;
   font-size: 1.2em;
 }
 .texto-principal h1 {
@@ -97,15 +106,17 @@ body {
   grid-template-columns: 4;
 }
 .container-footer .bloco {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 3rem;
 }
 .container-footer .bloco .icon {
-  width: 64px;
-  height: 64px;
-  background: #fff;
-  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
   margin: 1rem auto;
+}
+.container-footer .bloco .icon i {
+  font-size: 3rem;
 }
 .container-footer .bloco p {
   padding: 0 2rem;

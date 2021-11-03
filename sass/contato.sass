@@ -1,5 +1,13 @@
 @use 'variables'
 
+@mixin formConf
+  background: variables.$light-ice
+  color: variables.$deep-blue
+  font-size: 1.2rem
+  padding: 0.5rem
+  border-radius: 8px
+  border: none
+
 *
   padding: 0
   marging: 0
@@ -18,7 +26,7 @@ body
   height: auto
   img
     border-radius: 30px
-    width: 60%
+    width: 55%
     margin: 3rem
 
 #area
@@ -31,6 +39,7 @@ body
 
 #formulario
   width: 50vw
+  margin-bottom: 3rem
 
 .inputs
   padding: 1rem
@@ -40,11 +49,14 @@ body
   & input
     height: 2rem
     margin: 1rem 0
-    background: variables.$light-ice
-    font-size: 1.2rem
-    color: variables.$deep-blue
-    padding: 0.5rem
-    border-radius: 8px
-    border: none
+    @include formConf
   & .msg
     width: 35rem
+    @include formConf
+  & button
+    padding: 0.5rem 1rem
+    background: variables.$orange
+    color: variables.$light-ice
+    border: none
+    border-radius: 30px
+    font-size: 1.2rem

@@ -1,0 +1,50 @@
+@use 'variables'
+
+*
+  padding: 0
+  marging: 0
+  box-sizing: border-box
+
+body
+  font-family: 'Poppins', 'sans-serif'
+
+.container
+  display: flex
+  align-items: center
+  background: variables.$main-blue
+
+.div-img
+  width: 40vw
+  height: auto
+  img
+    border-radius: 30px
+    width: 60%
+    margin: 3rem
+
+#area
+  display: flex
+  align-items: center
+  flex-direction: column
+  font-size: 1.2rem
+  & label
+    margin: 2rem 0
+
+#formulario
+  width: 50vw
+
+.inputs
+  padding: 1rem
+  & label
+    padding-right: 1.5rem
+    line-height: 1rem
+  & input
+    height: 2rem
+    margin: 1rem 0
+    background: variables.$light-ice
+    font-size: 1.2rem
+    color: variables.$deep-blue
+    padding: 0.5rem
+    border-radius: 8px
+    border: none
+  & .msg
+    width: 35rem

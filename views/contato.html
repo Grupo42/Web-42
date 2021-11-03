@@ -1,38 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="./../css/form.css">
-	<link rel="stylesheet" type="text/css" href="./../css/contato-pagina.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./../assets/icons/style.css" />
-    <link rel="stylesheet" href="./../css/style.css" />
-     <script src="./../js/formulario.js"></script>
-	<title>Contato</title>
-</head>
-<body>
-	  <header class="nav">
-        <ul>
-          <li><a href="./../index.html">Home</a></li>
-          <li><a href="#">Imagens</a></li>
-          <li><a href="#">Contatos</a></li>
-        </ul>
-      </header>
-	<div class="div-img">
-		<img src="./../assets/background-escola.jpg" class="background-escola">
-	</div>
- <div id="area">
-	<label>Para maiores informações deixe seu contato abaixo:</label>
-    <form id="formulario" autocomplete="off" method="POST" action="">
-      <fieldset>
-        <div class="inputs">
-        <label>Nome:</label><input class="campo_nome" type="text" required="true" id="nome"><br>
-        <label>Email:</label><input class="campo_email" type="email" id="email" style="color: color"><br>
-        <label>Mensagem:</label><br><textarea class="msg" cols="35" rows="8"></textarea><br>
-        <button onclick="validate()" class="btn_submit">Enviar</button>
-     </div>
-      </fieldset>
-    </form>
-  </div>
-</body>
+    <!-- <link rel="stylesheet" type="text/css" href="./../css/form.
+    css" /> -->
+    <!-- <link rel="stylesheet" href="./../assets/icons/style.css" /> -->
+
+    <link rel="stylesheet" type="text/css" href="../css/contato.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Contato</title>
+  </head>
+
+  <body>
+    <header class="nav">
+      <ul>
+        <li><a href="./../index.html">Home</a></li>
+        <li><a href="#">Imagens</a></li>
+        <li><a href="#">Contatos</a></li>
+      </ul>
+    </header>
+
+    <div class="container">
+      <div class="div-img">
+        <img src="../assets/background-escola.jpg" />
+      </div>
+      <div id="area">
+        <label>Para maiores informações deixe seu contato abaixo:</label>
+        <form id="formulario" autocomplete="off" method="POST" action="">
+          <fieldset>
+            <div class="inputs">
+              <label>Nome:</label
+              ><input
+                placeholder="Digite seu nome"
+                class="campo_nome"
+                type="text"
+                required="true"
+                id="nome"
+              /><br />
+              <label>Email:</label
+              ><input
+                placeholder="Digite seu e-mail"
+                class="campo_email"
+                type="email"
+                id="email"
+                style="color: color"
+              /><br />
+              <label>Mensagem:</label><br />
+              <textarea class="msg" cols="35" rows="8"></textarea><br />
+              <button onclick="validate()" class="btn_submit">Enviar</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <script src="../js/formulario.js"></script>
+  </body>
 </html>

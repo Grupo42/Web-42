@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  marging: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "sans-serif";
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  background: #2884A0;
+}
+
+.div-img {
+  width: 40vw;
+  height: auto;
+}
+.div-img img {
+  border-radius: 30px;
+  width: 60%;
+  margin: 3rem;
+}
+
+#area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+#area label {
+  margin: 2rem 0;
+}
+
+#formulario {
+  width: 50vw;
+}
+
+.inputs {
+  padding: 1rem;
+}
+.inputs label {
+  padding-right: 1.5rem;
+  line-height: 1rem;
+}
+.inputs input {
+  height: 2rem;
+  margin: 1rem 0;
+  background: #EFF6FB;
+  font-size: 1.2rem;
+  color: #0E1127;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+}
+.inputs .msg {
+  width: 35rem;
+}
+
+/*# sourceMappingURL=contato.css.map */

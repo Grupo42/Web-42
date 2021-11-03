@@ -1,0 +1,54 @@
+#area
+{
+  position:relative;
+  left:47%;
+  top:19%;
+  width:400px;
+  height:400px;
+  margin-top: -30%;
+}
+#area #formulario
+{
+  position:absolute;
+  display:block;
+}
+fieldset
+{
+  width:400px;
+  height:250px;
+  background-color: #191970;
+}
+
+#formulario label
+{
+  position:absolute;
+  left:19px;
+  margin-right:5px;
+  color: white;
+}
+.inputs{
+  margin-top: 20px;
+}
+
+#formulario input.campo_nome
+{
+  position:absolute;
+  left:95px;
+  top:25px;
+  width:225px;
+
+}
+#formulario input.campo_email
+{
+  position:absolute;
+  left:95px;
+  margin-top:2px;
+  width:225px;
+}
+.msg
+{
+  margin-left: 10px;
+}
+.btn_submit{
+  margin-left: 10px;
+}

@@ -1,0 +1,47 @@
+@use 'variables'
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+.container
+  height: 90vh
+  background: variables.$main-blue
+
+.album
+  width: 90vw
+  display: grid
+  place-content: center
+  margin: 0 auto
+  gap: 2rem
+  grid-template-columns: repeat(4, 1fr)
+  padding: 3rem 0 0 3rem
+
+.foto
+  width: fit-content
+  & img
+    border: 3rem solid variables.$deep-blue
+    width: 20rem
+    transition: 500ms ease-in-out
+    &:hover
+      width: 33rem
+      border: 3px solid variables.$deep-blue
+
+@media (max-width: 1430px)
+  .album
+    background: variables.$main-blue
+    width: 100vw
+    grid-template-columns: repeat(3, 1fr)
+
+@media (max-width: 790px)
+  .album
+    background: variables.$main-blue
+    width: 100vw
+    grid-template-columns: repeat(1, 1fr)
+    & img
+      width: 15rem
+      border: 2rem solid variables.$deep-blue
+      &:hover
+        width: 90vw
+        border: 3px solid variables.$deep-blue

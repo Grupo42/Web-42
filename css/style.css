@@ -110,7 +110,6 @@ body {
   display: grid;
   grid-template-areas: "a b c d";
   grid-template-columns: 4;
-  border: solid;
   height: 65vh;
 }
 .container-footer .bloco {

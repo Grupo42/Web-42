@@ -47,4 +47,22 @@ body {
   font-size: 3rem;
 }
 
+@media (max-width: 1070px) {
+  .container {
+    height: fit-content;
+  }
+  .container .img-escola {
+    visibility: hidden;
+  }
+
+  .second-container {
+    display: block;
+    margin: 0 auto;
+  }
+
+  html {
+    background: #2884A0;
+  }
+}
+
 /*# sourceMappingURL=contato-principal.css.map */

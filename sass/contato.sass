@@ -22,8 +22,6 @@ body
   background: variables.$main-blue
 
 .div-img
-  //position: absolute
-  //visibility: hidden
   width: 40vw
   height: auto
   img
@@ -67,3 +65,20 @@ body
     &:hover
       background: variables.$light-ice
       color: variables.$main-blue
+
+@media (max-width: 975px)
+  .container
+    display: block
+  .div-img
+    position: absolute
+    visibility: hidden
+
+  #formulario
+    margin: .5rem
+    max-width: 90vw
+  .inputs
+    max-width: 90vw
+    & input
+      font-size: 0.8rem
+    & .msg
+      max-width: 80%

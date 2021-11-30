@@ -1,17 +1,17 @@
 * {
   padding: 0;
-  margin: 0;
+  marging: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', 'sans-serif';
+  font-family: "Poppins", "sans-serif";
 }
 
 .container {
   display: flex;
   align-items: center;
-  background: #2884a0;
+  background: #2884A0;
 }
 
 .div-img {
@@ -35,8 +35,7 @@ body {
 }
 
 #formulario {
-  margin-right: 1rem;
-  margin-left: 1rem;
+  max-width: 50vw;
   margin-bottom: 3rem;
 }
 
@@ -50,8 +49,8 @@ body {
 .inputs input {
   height: 2rem;
   margin: 1rem 0;
-  background: #eff6fb;
-  color: #0e1127;
+  background: #EFF6FB;
+  color: #0E1127;
   font-size: 1.2rem;
   padding: 0.5rem;
   border-radius: 8px;
@@ -60,8 +59,8 @@ body {
 .inputs .msg {
   width: 22rem;
   margin-bottom: 1rem;
-  background: #eff6fb;
-  color: #0e1127;
+  background: #EFF6FB;
+  color: #0E1127;
   font-size: 1.2rem;
   padding: 0.5rem;
   border-radius: 8px;
@@ -69,56 +68,41 @@ body {
 }
 .inputs button {
   padding: 0.5rem 1rem;
-  background: #fe6002;
-  color: #eff6fb;
+  background: #FE6002;
+  color: #EFF6FB;
   border: none;
   border-radius: 30px;
   font-size: 1.2rem;
   transition: 300ms ease-in-out;
 }
 .inputs button:hover {
-  background: #eff6fb;
-  color: #2884a0;
+  background: #EFF6FB;
+  color: #2884A0;
 }
 
-@media (max-width: 550px) {
-  /*===== IMG =====*/
+@media (max-width: 975px) {
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background: #2884a0;
+    display: block;
   }
+
   .div-img {
-    width: 100%;
-    height: auto;
-    background: #2884a0;
-  }
-  .div-img img {
-    border-radius: 0;
-    width: 100%;
-    margin: 0;
+    position: absolute;
+    visibility: hidden;
   }
 
-  /*===== FORM =====*/
-
-  #area {
-    display: grid;
-    align-items: center;
-    flex-direction: column;
-    font-size: 1.2rem;
-    background: #2884a0;
-  }
-  #area label {
-    margin: 1rem;
-  }
   #formulario {
-    margin-bottom: 3rem;
+    margin: 0.5rem;
+    max-width: 90vw;
+  }
+
+  .inputs {
+    max-width: 90vw;
+  }
+  .inputs input {
+    font-size: 0.8rem;
   }
   .inputs .msg {
-    width: 16rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
+    max-width: 80%;
   }
 }
 
